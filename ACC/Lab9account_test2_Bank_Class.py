@@ -5,7 +5,7 @@
 # with the __str__ method added to it.
 # It contains a loop and try/except clause
 
-import bijan_rahnamai_Lab9bankaccount2
+import Lab9bankaccount2_Bank_Class
 
 def main():
     again = 'y'
@@ -14,7 +14,7 @@ def main():
         print('Welcome to the Banking System.')
         # Get the starting balance.
         start_bal = float(input('Enter your starting balance: '))
-        savings = bijan_rahnamai_Lab9bankaccount2.BankAccount(start_bal)
+        savings = Lab9bankaccount2_Bank_Class.BankAccount(start_bal)
 
         # Deposit the user's paycheck.
         try:

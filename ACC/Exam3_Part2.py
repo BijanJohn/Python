@@ -8,7 +8,7 @@
 # It also will tell the user how many times they overdrafted
 
 #Import the driver file and datetime modules
-import bijan_rahnamai_Lab9bankaccount2
+import Lab9bankaccount2_Bank_Class
 from datetime import datetime
 
 print('\n'*50)
@@ -51,7 +51,7 @@ def main():
         print('$'+last)
         line1=float(last)
         file = open(filename,'a')
-        savings = bijan_rahnamai_Lab9bankaccount2.BankAccount(line1)
+        savings = Lab9bankaccount2_Bank_Class.BankAccount(line1)
         #Display the menu.
         choice = 0
         while choice!= QUIT:
@@ -116,7 +116,7 @@ def main():
         print('$'+last)
         line1=float(last)
         file = open(filename,'a')
-        savings = bijan_rahnamai_Lab9bankaccount2.BankAccount(line1)
+        savings = Lab9bankaccount2_Bank_Class.BankAccount(line1)
         #Display the menu.
         choice = 0
         while choice!= QUIT:
