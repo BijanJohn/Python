@@ -1,6 +1,6 @@
 import re
 
-DIGIT_RE = re.compile('\d')
+DIGIT_RE = re.compile("\d")
 UPPER_CASE_RE = re.compile('[A-Z]')
 LOWER_CASE_RE = re.compile('[a-z]')
 
