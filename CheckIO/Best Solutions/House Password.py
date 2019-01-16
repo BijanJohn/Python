@@ -1,9 +1,12 @@
+import re
+
+DIGIT_RE = re.compile('\d')
+UPPER_CASE_RE = re.compile('[A-Z]')
+LOWER_CASE_RE = re.compile('[a-z]')
+
 def checkio(data):
-        if len(data) >9:
-                if any(i.isupper() for i in data) and any(i.islower() for i in data) and any(i.isdigit() for i in data):
-                        return True
-                else:
-                        return False
+        if len(data) > 9 and DIGIT_RE.search(data) and UPPER_CASE_RE.search(data) and LOWER_CASE_RE.search(data):
+                return True
         return False
 
 if __name__ == '__main__':
